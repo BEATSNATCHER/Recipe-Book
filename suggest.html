@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO FIND RECIPES</title>
+</head>
+<body>
+    
+
+
+<form action="/submit" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="suggestion">Suggestion:</label>
+  <textarea id="suggestion" name="suggestion" required></textarea>
+  
+  <button type="submit">Submit</button> 
+</form>
+<select name="recipe" id="recipe">
+  <option value="ugali">Ugali</option>
+  <option value="biryani">Biryani</option>
+  <option value="chapati">Chapati</option>  
+  <fieldset>
+    <legend>Choose your favorite recipe:</legend>
+    <input type="radio" id="ugali" name="recipe" value="ugali">
+    <label for="ugali">Ugali</label><br>
+    <input type="radio" id="biryani" name="recipe" value="biryani">
+    <label for="biryani">Biryani</label><br>
+    <input type="radio" id="chapati" name="recipe" value="chapati">
+    <label for="chapati">Chapati</label><br>  
+    <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+</body>
+</html>
